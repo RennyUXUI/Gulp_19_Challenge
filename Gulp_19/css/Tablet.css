@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+  body {
+    background-image: url(media/images/gulp-bottom-beans);
+    margin: 0.5rem;
+  }
+  img {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  article {
+    flex-basis: 73%;
+  }
+  figure {
+    margin: 3 0 0 0;
+    flex-basis: 33%;
+  }
+  .span {
+    flex-basis: 22%;
+  }
+  nav a {
+    margin: 0 0 3 0;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .item {
+    flex-basis: 50%;
+    margin: 0;
+  }
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Tablet.css.map */

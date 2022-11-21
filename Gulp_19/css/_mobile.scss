@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    background-color: $main-color;
+    @include boxmodel1 (0 auto,0);
+    font-family: $sans-serif1;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: $sans-serif2;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  /* make images flexible */
+  img {
+    max-width: 75%;
+  }
+  a {
+    color: $secondary-color;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: $radius solid $accent-color;
+  }
+  /* navbar styling */
+  nav ul {
+    @include boxmodel1 (0 auto,0);
+    list-style-type: none;
+    display: block;
+    text-align: center;
+  }
+  nav li {
+    margin: (0 $stdspace $stdspace $stdspace);
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 200px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    flex-basis: 60%;
+    text-align: center;
+    justify-content: left;
+  }
+  nav a {
+    color: $background-color;
+    text-decoration: none;
+    display: block;
+  }
+  nav a:hover {
+    color: $accent-color;
+  }
+  /* establishes a white background */
+  .main-bkgd {
+    background: $background-color url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    @include boxmodel1 (0 auto, 2 rem);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  article{
+    flex-basis: 100%;
+  }
+    figure {
+    margin: (3rem 0 0 0);
+    flex-basis: 100%;
+      border-radius: $radius; 
+    }
+  img {
+      border-radius: 10%;
+      max-width: 95%;
+  }
+  figcaption {
+    color: $background-color;
+    padding: 0.5rem;
+  } 
+  .button {
+    display: inline-block;
+    background-color: $secondary-color;
+    border-radius: $radius;
+    @include boxmodel1 (0, 0.5rem 1rem);
+    color: $background-color;
+    text-decoration: none;
+    border: 3px solid $secondary-color;
+  }
+  .button:hover {
+    background-color: $background-color;
+    color: $secondary-color;
+  }
+  footer {
+    color: $background-color;
+    text-align: center;
+    border-top: $radius; color: $background-color;
+  ul {
+    list-style-type: none;
+    @include boxmodel1 (0 auto,0 auto);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  a {
+    color: $background-color;
+    font-size: 2rem;
+    display: block;
+    margin: (0 $stdspace 3rem $stdspace);
+  }
+}
+
+
+  
